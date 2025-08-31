@@ -1,23 +1,33 @@
 @import 'tailwindcss';
 
-/* .page-nav {
-  display: flex;
-  min-height: 100vh;
-  width: 100vw;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 12px;
-  font-size: 32px;
-  background: #575fcf;
-}
-.page-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-.page-nav a:hover {
-  color: #ef5777;
-}
+/* .page-title {
+  font-size: 72px;
+  margin-bottom: 108px;
+  margin-top: 60px;
+} */
+
+/* .example {
+  background-color: var(--axample-bg-color);
+  padding: var(--example-gap) 0;
+  margin-bottom: var(--example-gap);
+} */
+
+/* .container,
+.page-title {
+  width: 100%;
+  min-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+} */
+
+/* .example-title {
+  font-size: 48px;
+  margin-bottom: 0.7em;
+  text-align: left;
+} */
+
 .navigation-link {
   position: fixed;
   left: 25px;
@@ -29,6 +39,3 @@
   color: #fff;
   border-radius: 50%;
 }
-.navigation-link:hover {
-  background: #575fcf;
-} */

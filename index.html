@@ -5,13 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/src/style.css" rel="stylesheet" />
-    <title>Vite App</title>
+    <title>LemonSchool</title>
   </head>
-  <a href="nav.html">nav</a>
 
-  <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1>
-<h2>test-my test</h2> -->
-  <body>
+  <body class="bg-yellow">
+    {{> header logo="/public/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}} {{> footer}}
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

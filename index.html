@@ -9,7 +9,29 @@
   </head>
 
   <body class="bg-yellow">
-    {{> header logo="/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}} {{> footer}}
+    {{> header logo="/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}}
+    <div class="container text-white mx-auto px-3 max-w-5xl font-sen bg-black">
+      <header class="flex items-center relative py-6">
+        <div class="w-19.5 h-6">
+          <img src="logo-Robin.svg" alt="logo-Robin" />
+        </div>
+        <div id="mobile-container" class="md:ml-auto hidden md:block absolute md:static bg-indigo-950 md:bg-transparent top-18 -left-3 w-[calc(100%+24px)] md:w-auto">
+          <nav class="flex flex-col md:flex-row">
+            <a href="#" class="py-7.75 px-6 flex font-bold leading-[1.5] hover:bg-purple text-white transition duration-300">Experience</a>
+            <a href="#" class="py-7.75 px-6 flex font-bold leading-[1.5] hover:bg-purple text-white transition duration-300">Work</a>
+            <a href="#" class="py-7.75 px-6 flex font-bold leading-[1.5] hover:bg-purple text-white transition duration-300">Photography</a>
+            <a href="#" class="py-7.75 px-6 flex font-bold leading-[1.5] hover:bg-purple text-white transition duration-300">Contact</a>
+          </nav>
+        </div>
+        <button id="burger" class="relative w-6 h-6 cursor-pointer ml-auto before:absolute before:w-4.5 before:bg-nautral-300 before:h-0.75 before:top-1.5 before:left-1 after:absolute after:w-3 after:bg-nautral-300 after:h-0.75 after:top-4.5 after:right-0.5 hover:after:bg-purple hover:before:bg-purple md:hidden"></button>
+      </header>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellat ex itaque necessitatibus est impedit rerum harum ducimus sequi sit provident rem explicabo fugit delectus doloremque animi atque voluptas cumque quos commodi asperiores, dolorem quo voluptates. Doloribus totam quidem nobis rem ab minus ut expedita laudantium error.
+      Consequatur ipsum quibusdam dolorum sequi laborum ratione ex voluptatum vero corporis dolor recusandae commodi, tempora perspiciatis rerum? Quam dolore eaque ducimus ipsam commodi similique maiores nesciunt iste natus ex excepturi neque eos cumque aspernatur saepe, non, repudiandae nemo soluta. Error nesciunt, voluptatum quo unde, autem obcaecati
+      dolore dolorum quidem magni sapiente architecto accusamus ipsam quisquam. Qui quibusdam nemo culpa ullam eos modi autem, deserunt ad repudiandae blanditiis quisquam minus perspiciatis facere hic asperiores harum esse est commodi ex quas corrupti laudantium saepe molestias nulla. Exercitationem, molestiae, error, obcaecati explicabo id est animi et rem
+      quaerat esse asperiores quos minus delectus voluptates commodi unde fugiat? Soluta inventore sit error neque, ut illum quod doloribus quibusdam magni deleniti in repudiandae modi laudantium dolore, amet reiciendis esse recusandae similique minus. Incidunt quidem autem delectus id consectetur, facilis quod minima, iure sequi fuga doloribus expedita
+      rerum eos beatae distinctio saepe nobis, cum at maxime temporibus neque aliquam.
+    </div>
+    {{> footer}}
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -8,6 +8,11 @@
   --color-indigo: #7c86ff;
   --color-brand: #35540e;
   --color-red: #ebd6fb;
+  --color-white: #eeeeee;
+  /* gome page-colors */
+  --color-purple: #5221e6;
+  --color-indigo-950: #181823;
+  --color-nautral-300: #c4c4c4;
 
   --text-h1: 48px;
   --text-h2: 42px;
@@ -19,8 +24,11 @@
   --margin-template: 100px;
   --padding-template: 100px;
 
-  --font-primary: 'Montserrat';
-  --font-secondary: 'Roboto';
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-sen: 'Sen', sans-serif;
+
+  --container-5xl: 1464px;
 }
 
 @layer components {
@@ -44,4 +52,9 @@
   p {
     color: var(--color-brand);
   }
+}
+
+[alt=''] {
+  filter: blur(10px);
+  opacity: 0.6;
 }

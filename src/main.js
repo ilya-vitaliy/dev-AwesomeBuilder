@@ -19,6 +19,7 @@ burgerBtn.addEventListener('click', () => {
   mobileContainer.classList.toggle('hidden');
   burgerBtn.classList.toggle('after:bg-purple');
   burgerBtn.classList.toggle('before:bg-purple');
+  body.classList.toggle('overflow-hidden');
 });
 
 document.querySelectorAll('img').length > 0 ? getLoremImage() : null;

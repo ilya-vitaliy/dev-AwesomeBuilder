@@ -13,6 +13,7 @@ const getLoremImage = () => {
 
 const burgerBtn = document.querySelector('#burger');
 const mobileContainer = document.querySelector('#mobile-container');
+const body = document.querySelector('body');
 
 burgerBtn.addEventListener('click', () => {
   mobileContainer.classList.toggle('hidden');

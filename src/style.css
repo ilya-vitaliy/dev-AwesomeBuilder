@@ -9,6 +9,9 @@
   --color-brand: #35540e;
   --color-red: #ebd6fb;
   --color-white: #eeeeee;
+  --color-red-500: #882426;
+  --color-zinc-500: #323030;
+  --color-yellow-600: #c29545;
   /* gome page-colors */
   --color-purple: #5221e6;
   --color-indigo-950: #181823;
@@ -27,6 +30,7 @@
   --text-h4: 28px;
   --text-h5: 24px;
   --text-h6: 20px;
+  --text-3xl: 32px;
   --text-5xl: 55px;
   --text-9xl: 117px;
 
@@ -72,7 +76,7 @@
   h5,
   h6,
   p {
-    color: var(--color-brand);
+    color: var(--cilor-white);
   }
 }
 

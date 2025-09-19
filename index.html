@@ -10,7 +10,14 @@
 
   <body class="bg-zinc-500">
     {{> header logo="/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}}
-    <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">{{> header-portfolio }} {{> banner}} {{> experience}} {{> philosophy}} {{> skillset}}</div>
+    <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">
+      {{> header-portfolio }} 
+      {{> banner}} 
+      {{> experience}} 
+      {{> philosophy}} 
+      {{> skillset}} 
+      {{> partners}}
+    </div>
     {{> footer}}
     <script type="module" src="/src/main.js"></script>
   </body>

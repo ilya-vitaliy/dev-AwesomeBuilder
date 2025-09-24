@@ -22,7 +22,7 @@
   --color-green-400: #3cc74e;
   --color-blue-400: #609bff;
   --color-pink-400: #e95d90;
-  --color-pink-100:#FBE4FF;
+  --color-pink-100: #fbe4ff;
   --color-amber-100: #fff3e4;
 
   --text-h1: 48px;
@@ -84,4 +84,9 @@
 [alt=''] {
   filter: blur(10px);
   opacity: 0.6;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
 }

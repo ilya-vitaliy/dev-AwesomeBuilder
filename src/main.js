@@ -23,7 +23,6 @@ if (burgerBtn && mobileContainer) {
     body.classList.toggle('overflow-hidden');
   });
 }
-
 let swiper;
 
 function myFunction(Matchmedia_768) {
@@ -40,11 +39,13 @@ function myFunction(Matchmedia_768) {
       spaceBetween: 20,
       loop: false,
     });
+
   } else {
     swiper = new Swiper('.swiper', {
       slidesPerView: 4,
       slidesPerGroup: 1,
       loop: true,
+      loopFillGroupWithBlank: true,
     });
   }
 }

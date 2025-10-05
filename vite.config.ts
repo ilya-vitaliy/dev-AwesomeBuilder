@@ -5,11 +5,15 @@ import handlebars from 'vite-plugin-handlebars';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
+  // ⚡ обязательно для GitHub Pages
+  base: '/dev-AwesomeBuilder/',
+
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
   },
+
   plugins: [
     tailwindcss(),
     handlebars({

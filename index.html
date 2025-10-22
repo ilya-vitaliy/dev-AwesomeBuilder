@@ -11,7 +11,9 @@
   </head>
 
   <body class="bg-zinc-500">
-    {{> header logo="/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}}
+    {{> header logo="/logo-1.svg" }} 
+    {{> page-title title="LemonSchool" subtitle="subtitle"}}
+    <button type="button" id="triger" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
     <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">
       {{> header-portfolio }} 
       {{> banner}} 
@@ -32,7 +34,9 @@
       {{> tabs}}
     </div>
     {{> footer}}
+    {{> modal}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/modal.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

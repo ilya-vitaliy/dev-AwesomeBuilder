@@ -4,37 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link href="/src/style.css" rel="stylesheet" />
-    
+
     <title>LemonSchool</title>
   </head>
 
   <body class="bg-zinc-500">
-    {{> header logo="/logo-1.svg" }} 
-    {{> page-title title="LemonSchool" subtitle="subtitle"}}
-    <button type="button" id="triger" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+    {{> header logo="/logo-1.svg" }} {{> page-title title="LemonSchool" subtitle="subtitle"}}
+    <div class="flex gap-2">
+      <button type="button" data-triger="modal-2" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+      <button type="button" data-triger="modal-3" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+      <button type="button" data-triger="modal-4" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+    </div>
     <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">
-      {{> header-portfolio }} 
+      {{> header-portfolio }}
       {{> banner}} 
       {{> experience}} 
-      {{> philosophy}}
+      {{> philosophy}} 
       {{> skillset}} 
-      {{> partners}}
-      {{> projects}}
-      {{> content-template 
-          title="Instagram"
-          description="If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world"
-          link="More about me"
-          alt="instagram"
-          image="instagram.png"
-          bg-color="bg-pink-100"
-        }}
-        {{> dribbble}}
+      {{> partners}} 
+      {{> projects}} 
+      {{> content-template title="Instagram" description="If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best
+      moments that I would love to cherish with the world" link="More about me" alt="instagram" image="instagram.png" bg-color="bg-pink-100" }} 
+      {{> dribbble}} 
+      {{> about}}
       {{> tabs}}
     </div>
-    {{> footer}}
-    {{> modal}}
+    {{> footer}} {{> modal}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="/src/modal.js"></script>
     <script type="module" src="/src/main.js"></script>

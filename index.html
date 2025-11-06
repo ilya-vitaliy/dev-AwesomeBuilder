@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/dev-AwesomeBuilder/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <title>LemonSchool</title>
-    <script type="module" crossorigin src="/dev-AwesomeBuilder/assets/index-Bp1MVBDd.js"></script>
-    <link rel="stylesheet" crossorigin href="/dev-AwesomeBuilder/assets/index-BoaJilx-.css">
+    <script type="module" crossorigin src="/dev-AwesomeBuilder/assets/index-avxGsnW-.js"></script>
+    <link rel="stylesheet" crossorigin href="/dev-AwesomeBuilder/assets/index-BxNEmoqV.css">
   </head>
 
   <body class="bg-zinc-500">
     <header class="py-10 bg-amber border-b-1 text-brand">
-      <div class="max-w-5xl mx-auto px-3">
-        <a href="index.html">
-          <img src="/dev-AwesomeBuilder/logo-1.svg" class="site-logo" alt="alt" />
-        </a>
-      </div>
-    </header>
-    <main></main>
-    <h1 class="container text-yellow-600 text-shadow-lg/40 mx-auto font-semibold text-4xl lg:text-7xl mt-8 lg:mt-14 mb-14 lg:mb-28">LemonSchool</h1>
-    <p></p>
-    <button type="button" id="triger" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+  <div class="max-w-5xl mx-auto px-3">
+    <a href="index.html">
+      <img src="/dev-AwesomeBuilder/logo-1.svg" class="site-logo" alt="alt" />
+    </a>
+  </div>
+</header>
+<main></main>
+ <h1 class="container text-yellow-600 text-shadow-lg/40 mx-auto font-semibold text-4xl lg:text-7xl mt-8 lg:mt-14 mb-14 lg:mb-28">LemonSchool</h1>
+<p></p>
+
+    <div class="flex gap-2">
+      <button type="button" data-triger="modal-2" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+      <button type="button" data-triger="modal-3" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+      <button type="button" data-triger="modal-4" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-amber-400 hover:bg-amber-600 cursor-pointer">Triger</button>
+    </div>
     <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">
       <header class="flex items-center relative py-6 md:py-1 md:-mb-22 z-20">
         <div class="w-19.5 h-6">
@@ -239,27 +244,70 @@
       </section>      <section class="grid grid-cols-1 md:grid-cols-2">
           <div class="flex flex-col items-start py-12 px-5 md:py-20 lg:py-30 md:px-10 lg:px-18 bg-pink-100">
             <h2 class="text-indigo-950 text-3xl md:text-5xl font-bold mb-6 leading-[1.2]">Instagram</h2>
-            <p class="text-lg text-gray-600 leading-[1.5]">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world</p>
+            <p class="text-lg text-gray-600 leading-[1.5]">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best
+            moments that I would love to cherish with the world</p>
             <a href="#" class="text-indigo-950 mt-auto leading-[1.75] border-b pb-1 border-gray-500 md: lg:text-shadow-lg/20">More about me</a>
           </div>
           <div>
             <img src="instagram.png" class="object-cover w-full h-112.5 md:h-full" alt="instagram" />
           </div>
-        </section>        <section class="py-16 md:py-20 lg:py-30">
-        	<div class="max-w-[1076px] mx-auto md:px-7 xl:px-0">
-            <div class="mb-16 xl:mb-30">
-              <h2 class="text-white text-5xl font-bold mb-6 leading-[1.2]">Dribbble</h2>
-              <p class="text-lg text-gray-600 max-w-159 leading-[1.5] mb-10">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
-              <a href="#" class="text-white mt-auto font-normal leading-[1.5] border-b pb-1 border-gray-500 md: lg:text-shadow-lg/20">Follow me on Dribbble</a>
+        </section>      <section class="py-16 md:py-20 lg:py-30">
+        <div class="max-w-[1076px] mx-auto md:px-7 xl:px-0">
+          <div class="mb-16 xl:mb-30">
+            <h2 class="text-white text-5xl font-bold mb-6 leading-[1.2]">Dribbble</h2>
+            <p class="text-lg text-gray-600 max-w-159 leading-[1.5] mb-10">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
+            <a href="#" class="text-white mt-auto font-normal leading-[1.5] border-b pb-1 border-gray-500 md: lg:text-shadow-lg/20">Follow me on Dribbble</a>
+          </div>
+          <div class="img-dribble">
+            <picture>
+              <source media="(min-width: 768px)" srcset="dribble.png" />
+              <img src="dribble-xs.png" alt="Preview" loading="lazy" class="w-full h-auto object-cover" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 md:py-20 lg:py-30">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-start gap-x-6 max-w-5xl mx-auto">
+          <div class="mb-16 xl:mb-30">
+            <h2 class="text-white text-5xl max-w-[588px] font-bold mb-6 leading-[1.2]">This is what people say about me</h2>
+            <p class="text-lg text-gray-600 font-normal max-w-[588px] leading-[1.5] mb-10">Here are a few lines from people who I have worked with over the past 8+ years in my design career.</p>
+            <a href="#" class="text-white mt-auto font-normal leading-[1.5] border-b pb-1 border-gray-500">See all testimonials</a>
+          </div>
+          <div class="grid grid-cols-1 gap-y-[120px]">
+            <div class="bg-black">
+              <img src="blog-1-lg.webp" class="w-full" alt="Testimonial from Richard Owens" />
+              <div class="border border-gray-500">
+                <blockquote class="text-white text-h5 pb-16 pt-16 mx-auto font-bold max-w-[508px] leading-[1.5]">‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</blockquote>
+                <h6 class="text-gray-600 mb-16 mx-auto font-bold max-w-[508px] leading-[1.5]">
+                  <span class="block">Richard Owens</span>
+                  <span class="block mt-[4px]">CEO, Company 1</span>
+                </h6>
+              </div>
             </div>
-            <div class="img-dribble">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="dribble.png" />
-                    <img src="dribble-xs.png" alt="Preview" loading="lazy" class="w-full h-auto object-cover" />
-                </picture>
-        		</div>
-        	</div>
-        </section>      <section>
+            <div class="bg-black">
+              <img src="blog-2-lg.webp" class="w-full" alt="Testimonial from Jane Doe" />
+              <div class="border border-gray-500">
+                <blockquote class="text-white text-h5 pb-16 pt-16 mx-auto font-bold max-w-[508px] leading-[1.5]">‘’I think Robin has an incredible gift. It has been an absolute pleasure to work with a designer of this caliber.’’</blockquote>
+                <h6 class="text-gray-600 mb-16 mx-auto font-bold max-w-[508px] leading-[1.5]">
+                  <span class="block">Emily Parker</span>
+                  <span class="block mt-[4px]">CEO, Company 2</span>
+                </h6>
+              </div>
+            </div>
+            <div class="bg-black">
+              <img src="blog-3-lg.webp" class="w-full" alt="Testimonial from Jane Doe" />
+              <div class="border border-gray-500">
+                <blockquote class="text-white text-h5 pb-16 pt-16 mx-auto font-bold max-w-[508px] leading-[1.5]">‘’All I can say that, Robin is a phenomenal designer. The wavelength at which he thinks is astoundaing. I love the focus, passion and attention to detial in the design.’’</blockquote>
+                <h6 class="text-gray-600 mb-16 mx-auto font-bold max-w-[508px] leading-[1.5]">
+                  <span class="block">Vincent Rudd</span>
+                  <span class="block mt-[4px]">CEO, Company 1</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="max-w-5xl   py-12 md:py-20 lg:py-30 mx-auto">
           <h2 class="text-3xl sm:text-5xl font-bold mb-6 leading-[1.2]">Photography</h2>
           <p class="max-w-172,5 lg:max-w-147 max-w- lg:max-h-13,5 text-lg font-normal text-gray-500 leading-[1.5] mb-16">Here is a collection of my best travel pictures that I took while travelling places all around the world.</p>
@@ -301,68 +349,116 @@
       </section>
     </div>
     </main>
-    <footer class="bg-amber mt-auto py-10 border-t-1">
-      <div class="container mx-auto px-3 flex gap-8">
-        <address class="text-brand">
-          <a href="index.html">
-            <img src="logo-1.svg" alt="logo" />
-          </a>
-          Lemon School
-        </address>
-        <nav class="flex flex-col gap-4 text-brand">
-          <a href="index.html" class="hover:text-sky">home</a>
-          <a href="box-sizing.html" class="hover:text-sky">box-sizing</a>
-          <a href="template-page.html" class="hover:text-sky">template-page</a>
-        </nav>
-      </div>
-      <a href="nav.html" class="fixed left-6 bottom-6 bg-sky text-yellow rounded-full py-1 px-3 hover:bg-indigo">nav</a>
-    </footer>
-    <svg class="hidden">
-      <symbol id="product-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.2222 23.1111H17.7778V30.2222H30.2222V23.1111ZM30.2222 1.77778H17.7778V16H30.2222V1.77778ZM10.6667 16H1.77778V30.2222H10.6667V16ZM10.6667 1.77778H1.77778V8.88889H10.6667V1.77778ZM17.7778 0C16.7959 0 16 0.795947 16 1.77778V16C16 16.9819 16.7959 17.7778 17.7778 17.7778H30.2222C31.2041 17.7778 32 16.9819 32 16V1.77778C32 0.795947 31.2041 0 30.2222 0H17.7778ZM17.7778 21.3333C16.7959 21.3333 16 22.1292 16 23.1111V30.2222C16 31.2041 16.7959 32 17.7778 32H30.2222C31.2041 32 32 31.2041 32 30.2222V23.1111C32 22.1292 31.2041 21.3333 30.2222 21.3333H17.7778ZM0 16C0 15.0182 0.795947 14.2222 1.77778 14.2222H10.6667C11.6485 14.2222 12.4444 15.0182 12.4444 16V30.2222C12.4444 31.2041 11.6485 32 10.6667 32H1.77778C0.795947 32 0 31.2041 0 30.2222V16ZM1.77778 0C0.795947 0 0 0.795947 0 1.77778V8.88889C0 9.87072 0.795947 10.6667 1.77778 10.6667H10.6667C11.6485 10.6667 12.4444 9.87072 12.4444 8.88889V1.77778C12.4444 0.795947 11.6485 0 10.6667 0H1.77778Z" fill="currentColor"/>
-      </symbol>
-      <symbol id="visual-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.2211 1.20013L30.799 14.778L31.9993 13.5779L18.4214 0L17.2211 1.20013Z" fill="currentColor"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2336 7.60133C18.4975 6.86522 17.3874 6.65144 16.4305 7.06151L7.00714 11.1001C5.8941 11.5771 5.03594 12.5059 4.65549 13.6597C3.76246 16.3682 2.60708 19.9468 1.67428 23.0059C1.20815 24.5346 0.795621 25.9401 0.498919 27.0447C0.35075 27.5963 0.229365 28.0807 0.144391 28.4716C0.0652554 28.8358 0 29.1944 0 29.4529V29.8044L2.19436 31.9988H2.54586C2.80447 31.9988 3.16311 31.9336 3.52722 31.8545C3.91819 31.7695 4.40255 31.6481 4.95417 31.4999C6.05877 31.2033 7.46417 30.7907 8.99285 30.3246C12.052 29.3918 15.6306 28.2363 18.3392 27.3434C19.493 26.9629 20.4217 26.1048 20.8988 24.9917L24.9374 15.5683C25.3474 14.6115 25.1336 13.5013 24.3975 12.7652L19.2336 7.60133ZM17.0992 8.62152C17.4181 8.48483 17.7881 8.5561 18.0335 8.80147L23.1973 13.9654C23.4428 14.2107 23.5141 14.5808 23.3773 14.8997L19.3387 24.3232C19.0518 24.9924 18.4955 25.5046 17.8076 25.7314C15.1052 26.6224 11.5399 27.7735 8.49784 28.701C6.97594 29.1652 5.59147 29.5714 4.51389 29.8608C3.97444 30.0057 3.51965 30.1192 3.16676 30.196C3.09215 30.2121 3.02327 30.2265 2.9601 30.2389L11.6316 21.5674C12.5779 22.0195 13.7457 21.8535 14.5295 21.0697C15.5237 20.0755 15.5237 18.4636 14.5295 17.4694C13.5353 16.4751 11.9233 16.4751 10.9291 17.4694C10.1453 18.2532 9.97941 19.421 10.4315 20.3672L1.7599 29.0388C1.77238 28.9756 1.78668 28.9067 1.80291 28.8321C1.87961 28.4792 1.99315 28.0243 2.13806 27.485C2.42749 26.4074 2.83366 25.0229 3.29772 23.501C4.22533 20.4589 5.37634 16.8935 6.26738 14.1912C6.49416 13.5034 7.00635 12.947 7.67571 12.6601L17.0992 8.62152Z" fill="currentColor"/>
-      </symbol>
-      <symbol id="motion-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2" stroke-dasharray="10 10"/>
-          <path d="M21 16L13.5 20.3301L13.5 11.6699L21 16Z" fill="currentColor"/>
-      </symbol>
-      <symbol id="photography" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M29.8276 8.2356H26.8998L26.2272 5.20139C25.9399 3.90525 24.8106 3 23.4808 3H13.3164C11.9867 3 10.8573 3.90519 10.57 5.20133L9.89738 8.2356H9.20263V6.94096C9.20263 6.2114 8.608 5.6178 7.87712 5.6178H3.59138C2.8605 5.6178 2.26588 6.2114 2.26588 6.94096V8.2356H2.17231C0.9745 8.2356 0 9.20843 0 10.4042V25.0919C0 26.2877 0.9745 27.2605 2.17237 27.2605H4.39406H12.2471C14.0205 28.4073 16.1329 29.0741 18.3986 29.0741C20.6643 29.0741 22.7767 28.4073 24.55 27.2605H29.8276C31.0255 27.2605 32 26.2877 32 25.0919V10.4042C32 9.20843 31.0255 8.2356 29.8276 8.2356ZM11.7904 5.47093C11.9501 4.7508 12.5776 4.24779 13.3164 4.24779H23.4807C24.2196 4.24779 24.8471 4.75073 25.0067 5.47093L25.6196 8.2356H24.55C22.7766 7.08883 20.6643 6.42204 18.3986 6.42204C16.1329 6.42204 14.0205 7.08883 12.2471 8.2356H11.1775L11.7904 5.47093ZM3.51588 6.94096C3.51588 6.89941 3.54975 6.86565 3.59138 6.86565H7.87706C7.91869 6.86565 7.95256 6.89947 7.95256 6.94096V8.2356H3.51588V6.94096ZM5.01906 26.0126V19.2357C5.01906 18.8911 4.73925 18.6118 4.39406 18.6118C4.04887 18.6118 3.76906 18.8911 3.76906 19.2357V26.0127H2.17237C1.66381 26.0127 1.25 25.5996 1.25 25.0919V10.4042C1.25 9.89649 1.66381 9.48345 2.17237 9.48345H2.89094H8.57756H10.3991H10.6496C8.43769 11.5515 7.053 14.4912 7.053 17.748C7.053 21.0049 8.43769 23.9445 10.6496 26.0126H5.01906ZM24.1692 26.0127C23.4242 26.5326 22.606 26.9547 21.7333 27.2605C20.6888 27.6265 19.5667 27.8262 18.3986 27.8262C17.2304 27.8262 16.1082 27.6264 15.0638 27.2605C14.1911 26.9547 13.373 26.5326 12.6279 26.0127C10.0154 24.1892 8.303 21.1648 8.303 17.7481C8.303 14.3314 10.0154 11.3069 12.6279 9.48352C13.3729 8.96354 14.1911 8.54145 15.0638 8.23567C16.1083 7.86967 17.2304 7.66995 18.3986 7.66995C19.5667 7.66995 20.6889 7.86973 21.7333 8.23567C22.606 8.54145 23.4241 8.96354 24.1692 9.48352C26.7817 11.3069 28.4941 14.3314 28.4941 17.7481C28.4941 21.1648 26.7817 24.1892 24.1692 26.0127ZM30.75 25.0918C30.75 25.5996 30.3363 26.0126 29.8276 26.0126H26.1475C28.3594 23.9445 29.7441 21.0049 29.7441 17.748C29.7441 14.4912 28.3594 11.5515 26.1475 9.48345H26.398H29.8276C30.3363 9.48345 30.75 9.89649 30.75 10.4042V25.0918Z" fill="currentColor"/>
-          <path d="M18.3704 10.1111C14.1225 10.1111 10.6667 13.5669 10.6667 17.8148C10.6667 22.0626 14.1225 25.5185 18.3704 25.5185C18.9893 25.5185 19.6054 25.4448 20.2014 25.2994C20.5163 25.2226 20.7092 24.9052 20.6325 24.5904C20.5557 24.2755 20.2382 24.0825 19.9234 24.1594C19.4182 24.2826 18.8957 24.345 18.3704 24.345C14.7696 24.345 11.8402 21.4156 11.8402 17.8149C11.8402 14.2141 14.7696 11.2847 18.3704 11.2847C21.9711 11.2847 24.9005 14.2141 24.9005 17.8149C24.9005 19.1272 24.513 20.3926 23.7797 21.4742C23.5979 21.7424 23.668 22.1074 23.9362 22.2892C24.2042 22.471 24.5692 22.401 24.7511 22.1328C25.6166 20.8561 26.0741 19.363 26.0741 17.8149C26.0741 13.5669 22.6182 10.1111 18.3704 10.1111Z" fill="currentColor"/>
-          <path d="M4.74075 11.2964C3.43369 11.2964 2.37038 12.3598 2.37038 13.6668C2.37038 14.9738 3.43375 16.0371 4.74075 16.0371C6.04774 16.0371 7.11112 14.9738 7.11112 13.6668C7.11112 12.3598 6.04774 11.2964 4.74075 11.2964ZM4.74075 14.764C4.13579 14.764 3.64357 14.2718 3.64357 13.6668C3.64357 13.0619 4.13579 12.5696 4.74075 12.5696C5.34571 12.5696 5.83792 13.0619 5.83792 13.6668C5.83792 14.2718 5.34577 14.764 4.74075 14.764Z" fill="currentColor"/>
-          <path d="M23.6924 23.6248C23.6847 23.5875 23.6734 23.5502 23.6586 23.514C23.6438 23.4785 23.6254 23.4441 23.6041 23.4121C23.5828 23.3795 23.5579 23.3493 23.5306 23.3221C23.5033 23.2948 23.4726 23.2699 23.4405 23.248C23.4079 23.2267 23.3736 23.2083 23.338 23.1935C23.3024 23.1787 23.2652 23.1674 23.2272 23.1597C23.1508 23.1443 23.072 23.1443 22.9955 23.1597C22.9575 23.1674 22.9202 23.1787 22.8847 23.1935C22.8491 23.2083 22.8148 23.2267 22.7822 23.248C22.7502 23.2699 22.72 23.2948 22.6921 23.3221C22.6648 23.3493 22.64 23.3795 22.6186 23.4121C22.5973 23.4441 22.5789 23.4785 22.5641 23.514C22.5493 23.5502 22.538 23.5875 22.5303 23.6248C22.5226 23.6633 22.5185 23.7024 22.5185 23.7409C22.5185 23.7794 22.5226 23.8185 22.5303 23.8565C22.538 23.8944 22.5493 23.9317 22.5641 23.9672C22.5789 24.0034 22.5973 24.0377 22.6186 24.0697C22.64 24.1023 22.6648 24.1325 22.6921 24.1598C22.72 24.187 22.7501 24.2119 22.7822 24.2333C22.8148 24.2546 22.8491 24.2729 22.8847 24.2878C22.9203 24.3026 22.9575 24.3138 22.9955 24.3215C23.034 24.3292 23.0726 24.3334 23.1111 24.3334C23.1501 24.3334 23.1887 24.3292 23.2272 24.3215C23.2652 24.3138 23.3025 24.3026 23.338 24.2878C23.3736 24.2729 23.408 24.2546 23.4405 24.2333C23.4725 24.2119 23.5033 24.187 23.5306 24.1598C23.6408 24.0496 23.7037 23.8967 23.7037 23.7409C23.7037 23.7024 23.7001 23.6633 23.6924 23.6248Z" fill="currentColor"/>
-      </symbol>
-    </svg>
-    <div class="modal">
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi doloribus quasi exercitationem unde ab, magnam iste animi dicta enim omnis quis consequatur porro ipsum veritatis molestias fugiat maiores itaque earum deleniti iure ipsam similique dignissimos? Consequuntur delectus voluptate, laudantium quis
-        odio quibusdam temporibus qui eveniet, laboriosam accusantium, modi natus. Dignissimos fuga placeat nisi esse dolor dolorem incidunt accusantium fugit, tenetur adipisci, expedita amet voluptatibus animi. Assumenda possimus officiis sit pariatur quasi vel dolore minima eveniet nihil quia quas laborum aut vero
-        explicabo, quisquam quae odio magnam natus officia commodi quaerat aspernatur eum maiores. Soluta non voluptates corporis necessitatibus molestiae, illo quis tenetur, iure, asperiores excepturi fugiat consequuntur eaque veniam ab optio aspernatur quasi ipsa nostrum amet. Porro blanditiis cum neque ipsam ad minus
-        delectus, beatae quaerat iusto vel dolores aperiam rem adipisci dicta cumque voluptatum eos consectetur numquam. Culpa voluptatem quidem natus, voluptatum distinctio suscipit rerum qui accusantium, nam doloremque dolor beatae. Obcaecati, officiis deserunt libero pariatur, nisi consequuntur ipsam quod aliquam itaque
-        voluptatibus voluptate, ad quasi rem culpa voluptatum veniam vero! Odit incidunt fugit facere minima asperiores commodi amet aut porro nesciunt. Quos fugiat molestias molestiae optio quibusdam, minima doloremque in earum sed suscipit labore deleniti voluptates quod.
-        <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer">close window</button>
-      </div>
+<footer class="bg-amber mt-auto py-10 border-t-1">
+  <div class="container mx-auto px-3 flex gap-8">
+    <address class="text-brand">
+      <a href="index.html">
+        <img src="logo-1.svg" alt="logo" />
+      </a>
+      Lemon School
+    </address>
+    <nav class="flex flex-col gap-4 text-brand">
+      <a href="index.html" class="hover:text-sky">home</a>
+      <a href="box-sizing.html" class="hover:text-sky">box-sizing</a>
+      <a href="template-page.html" class="hover:text-sky">template-page</a>
+    </nav>
+  </div>
+  <a href="nav.html" class="fixed left-6 bottom-6 bg-sky text-yellow rounded-full py-1 px-3 hover:bg-indigo">nav</a>
+</footer>
+<svg class="hidden">
+  <symbol id="product-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M30.2222 23.1111H17.7778V30.2222H30.2222V23.1111ZM30.2222 1.77778H17.7778V16H30.2222V1.77778ZM10.6667 16H1.77778V30.2222H10.6667V16ZM10.6667 1.77778H1.77778V8.88889H10.6667V1.77778ZM17.7778 0C16.7959 0 16 0.795947 16 1.77778V16C16 16.9819 16.7959 17.7778 17.7778 17.7778H30.2222C31.2041 17.7778 32 16.9819 32 16V1.77778C32 0.795947 31.2041 0 30.2222 0H17.7778ZM17.7778 21.3333C16.7959 21.3333 16 22.1292 16 23.1111V30.2222C16 31.2041 16.7959 32 17.7778 32H30.2222C31.2041 32 32 31.2041 32 30.2222V23.1111C32 22.1292 31.2041 21.3333 30.2222 21.3333H17.7778ZM0 16C0 15.0182 0.795947 14.2222 1.77778 14.2222H10.6667C11.6485 14.2222 12.4444 15.0182 12.4444 16V30.2222C12.4444 31.2041 11.6485 32 10.6667 32H1.77778C0.795947 32 0 31.2041 0 30.2222V16ZM1.77778 0C0.795947 0 0 0.795947 0 1.77778V8.88889C0 9.87072 0.795947 10.6667 1.77778 10.6667H10.6667C11.6485 10.6667 12.4444 9.87072 12.4444 8.88889V1.77778C12.4444 0.795947 11.6485 0 10.6667 0H1.77778Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="visual-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.2211 1.20013L30.799 14.778L31.9993 13.5779L18.4214 0L17.2211 1.20013Z" fill="currentColor"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2336 7.60133C18.4975 6.86522 17.3874 6.65144 16.4305 7.06151L7.00714 11.1001C5.8941 11.5771 5.03594 12.5059 4.65549 13.6597C3.76246 16.3682 2.60708 19.9468 1.67428 23.0059C1.20815 24.5346 0.795621 25.9401 0.498919 27.0447C0.35075 27.5963 0.229365 28.0807 0.144391 28.4716C0.0652554 28.8358 0 29.1944 0 29.4529V29.8044L2.19436 31.9988H2.54586C2.80447 31.9988 3.16311 31.9336 3.52722 31.8545C3.91819 31.7695 4.40255 31.6481 4.95417 31.4999C6.05877 31.2033 7.46417 30.7907 8.99285 30.3246C12.052 29.3918 15.6306 28.2363 18.3392 27.3434C19.493 26.9629 20.4217 26.1048 20.8988 24.9917L24.9374 15.5683C25.3474 14.6115 25.1336 13.5013 24.3975 12.7652L19.2336 7.60133ZM17.0992 8.62152C17.4181 8.48483 17.7881 8.5561 18.0335 8.80147L23.1973 13.9654C23.4428 14.2107 23.5141 14.5808 23.3773 14.8997L19.3387 24.3232C19.0518 24.9924 18.4955 25.5046 17.8076 25.7314C15.1052 26.6224 11.5399 27.7735 8.49784 28.701C6.97594 29.1652 5.59147 29.5714 4.51389 29.8608C3.97444 30.0057 3.51965 30.1192 3.16676 30.196C3.09215 30.2121 3.02327 30.2265 2.9601 30.2389L11.6316 21.5674C12.5779 22.0195 13.7457 21.8535 14.5295 21.0697C15.5237 20.0755 15.5237 18.4636 14.5295 17.4694C13.5353 16.4751 11.9233 16.4751 10.9291 17.4694C10.1453 18.2532 9.97941 19.421 10.4315 20.3672L1.7599 29.0388C1.77238 28.9756 1.78668 28.9067 1.80291 28.8321C1.87961 28.4792 1.99315 28.0243 2.13806 27.485C2.42749 26.4074 2.83366 25.0229 3.29772 23.501C4.22533 20.4589 5.37634 16.8935 6.26738 14.1912C6.49416 13.5034 7.00635 12.947 7.67571 12.6601L17.0992 8.62152Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="motion-design" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="2" stroke-dasharray="10 10"/>
+      <path d="M21 16L13.5 20.3301L13.5 11.6699L21 16Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="photography" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M29.8276 8.2356H26.8998L26.2272 5.20139C25.9399 3.90525 24.8106 3 23.4808 3H13.3164C11.9867 3 10.8573 3.90519 10.57 5.20133L9.89738 8.2356H9.20263V6.94096C9.20263 6.2114 8.608 5.6178 7.87712 5.6178H3.59138C2.8605 5.6178 2.26588 6.2114 2.26588 6.94096V8.2356H2.17231C0.9745 8.2356 0 9.20843 0 10.4042V25.0919C0 26.2877 0.9745 27.2605 2.17237 27.2605H4.39406H12.2471C14.0205 28.4073 16.1329 29.0741 18.3986 29.0741C20.6643 29.0741 22.7767 28.4073 24.55 27.2605H29.8276C31.0255 27.2605 32 26.2877 32 25.0919V10.4042C32 9.20843 31.0255 8.2356 29.8276 8.2356ZM11.7904 5.47093C11.9501 4.7508 12.5776 4.24779 13.3164 4.24779H23.4807C24.2196 4.24779 24.8471 4.75073 25.0067 5.47093L25.6196 8.2356H24.55C22.7766 7.08883 20.6643 6.42204 18.3986 6.42204C16.1329 6.42204 14.0205 7.08883 12.2471 8.2356H11.1775L11.7904 5.47093ZM3.51588 6.94096C3.51588 6.89941 3.54975 6.86565 3.59138 6.86565H7.87706C7.91869 6.86565 7.95256 6.89947 7.95256 6.94096V8.2356H3.51588V6.94096ZM5.01906 26.0126V19.2357C5.01906 18.8911 4.73925 18.6118 4.39406 18.6118C4.04887 18.6118 3.76906 18.8911 3.76906 19.2357V26.0127H2.17237C1.66381 26.0127 1.25 25.5996 1.25 25.0919V10.4042C1.25 9.89649 1.66381 9.48345 2.17237 9.48345H2.89094H8.57756H10.3991H10.6496C8.43769 11.5515 7.053 14.4912 7.053 17.748C7.053 21.0049 8.43769 23.9445 10.6496 26.0126H5.01906ZM24.1692 26.0127C23.4242 26.5326 22.606 26.9547 21.7333 27.2605C20.6888 27.6265 19.5667 27.8262 18.3986 27.8262C17.2304 27.8262 16.1082 27.6264 15.0638 27.2605C14.1911 26.9547 13.373 26.5326 12.6279 26.0127C10.0154 24.1892 8.303 21.1648 8.303 17.7481C8.303 14.3314 10.0154 11.3069 12.6279 9.48352C13.3729 8.96354 14.1911 8.54145 15.0638 8.23567C16.1083 7.86967 17.2304 7.66995 18.3986 7.66995C19.5667 7.66995 20.6889 7.86973 21.7333 8.23567C22.606 8.54145 23.4241 8.96354 24.1692 9.48352C26.7817 11.3069 28.4941 14.3314 28.4941 17.7481C28.4941 21.1648 26.7817 24.1892 24.1692 26.0127ZM30.75 25.0918C30.75 25.5996 30.3363 26.0126 29.8276 26.0126H26.1475C28.3594 23.9445 29.7441 21.0049 29.7441 17.748C29.7441 14.4912 28.3594 11.5515 26.1475 9.48345H26.398H29.8276C30.3363 9.48345 30.75 9.89649 30.75 10.4042V25.0918Z" fill="currentColor"/>
+      <path d="M18.3704 10.1111C14.1225 10.1111 10.6667 13.5669 10.6667 17.8148C10.6667 22.0626 14.1225 25.5185 18.3704 25.5185C18.9893 25.5185 19.6054 25.4448 20.2014 25.2994C20.5163 25.2226 20.7092 24.9052 20.6325 24.5904C20.5557 24.2755 20.2382 24.0825 19.9234 24.1594C19.4182 24.2826 18.8957 24.345 18.3704 24.345C14.7696 24.345 11.8402 21.4156 11.8402 17.8149C11.8402 14.2141 14.7696 11.2847 18.3704 11.2847C21.9711 11.2847 24.9005 14.2141 24.9005 17.8149C24.9005 19.1272 24.513 20.3926 23.7797 21.4742C23.5979 21.7424 23.668 22.1074 23.9362 22.2892C24.2042 22.471 24.5692 22.401 24.7511 22.1328C25.6166 20.8561 26.0741 19.363 26.0741 17.8149C26.0741 13.5669 22.6182 10.1111 18.3704 10.1111Z" fill="currentColor"/>
+      <path d="M4.74075 11.2964C3.43369 11.2964 2.37038 12.3598 2.37038 13.6668C2.37038 14.9738 3.43375 16.0371 4.74075 16.0371C6.04774 16.0371 7.11112 14.9738 7.11112 13.6668C7.11112 12.3598 6.04774 11.2964 4.74075 11.2964ZM4.74075 14.764C4.13579 14.764 3.64357 14.2718 3.64357 13.6668C3.64357 13.0619 4.13579 12.5696 4.74075 12.5696C5.34571 12.5696 5.83792 13.0619 5.83792 13.6668C5.83792 14.2718 5.34577 14.764 4.74075 14.764Z" fill="currentColor"/>
+      <path d="M23.6924 23.6248C23.6847 23.5875 23.6734 23.5502 23.6586 23.514C23.6438 23.4785 23.6254 23.4441 23.6041 23.4121C23.5828 23.3795 23.5579 23.3493 23.5306 23.3221C23.5033 23.2948 23.4726 23.2699 23.4405 23.248C23.4079 23.2267 23.3736 23.2083 23.338 23.1935C23.3024 23.1787 23.2652 23.1674 23.2272 23.1597C23.1508 23.1443 23.072 23.1443 22.9955 23.1597C22.9575 23.1674 22.9202 23.1787 22.8847 23.1935C22.8491 23.2083 22.8148 23.2267 22.7822 23.248C22.7502 23.2699 22.72 23.2948 22.6921 23.3221C22.6648 23.3493 22.64 23.3795 22.6186 23.4121C22.5973 23.4441 22.5789 23.4785 22.5641 23.514C22.5493 23.5502 22.538 23.5875 22.5303 23.6248C22.5226 23.6633 22.5185 23.7024 22.5185 23.7409C22.5185 23.7794 22.5226 23.8185 22.5303 23.8565C22.538 23.8944 22.5493 23.9317 22.5641 23.9672C22.5789 24.0034 22.5973 24.0377 22.6186 24.0697C22.64 24.1023 22.6648 24.1325 22.6921 24.1598C22.72 24.187 22.7501 24.2119 22.7822 24.2333C22.8148 24.2546 22.8491 24.2729 22.8847 24.2878C22.9203 24.3026 22.9575 24.3138 22.9955 24.3215C23.034 24.3292 23.0726 24.3334 23.1111 24.3334C23.1501 24.3334 23.1887 24.3292 23.2272 24.3215C23.2652 24.3138 23.3025 24.3026 23.338 24.2878C23.3736 24.2729 23.408 24.2546 23.4405 24.2333C23.4725 24.2119 23.5033 24.187 23.5306 24.1598C23.6408 24.0496 23.7037 23.8967 23.7037 23.7409C23.7037 23.7024 23.7001 23.6633 23.6924 23.6248Z" fill="currentColor"/>
+  </symbol>
+</svg>
+ <div class="modal" id="modal-register">
+  <div class="modal-body">
+    <h2>modal-2</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi doloribus quasi exercitationem unde ab, magnam iste animi dicta enim omnis quis consequatur porro ipsum veritatis molestias fugiat maiores itaque earum deleniti iure ipsam similique dignissimos? Consequuntur delectus voluptate, laudantium quis
+    odio quibusdam temporibus qui eveniet, laboriosam accusantium, modi natus. Dignissimos fuga placeat nisi esse dolor dolorem incidunt accusantium fugit, tenetur adipisci, expedita amet voluptatibus animi. Assumenda possimus officiis sit pariatur quasi vel dolore minima eveniet nihil quia quas laborum aut vero
+    explicabo, quisquam quae odio magnam natus officia commodi quaerat aspernatur eum maiores. Soluta non voluptates corporis necessitatibus molestiae, illo quis tenetur, iure, asperiores excepturi fugiat consequuntur eaque veniam ab optio aspernatur quasi ipsa nostrum amet.
+    <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer" data-close-modal>close</button>
+  </div>
+  <div class="modal show" id="modal-1">
+    <div class="modal-body">
+      <form class="grid gap-5">
+        <div>
+          <label for="login">Введіть ім'я</label>
+          <input id="login" type="text" placeholder="login" class="border border-1" />
+        </div>
+        <div>
+          <label for="password">Введіть пароль</label>
+          <input id="password" type="text" placeholder="password" class="border border-1" />
+        </div>
+        <button type="button" class="text-red-400 hover:text-red-600" data-triger="modal-register">Реєстрація</button>
+        <div class="flex gap-3">
+          <button type="submit" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-blue-400 hover:bg-pink-600 cursor-pointer">ОК</button>
+          <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer" data-close-modal>close</button>
+        </div>
+      </form>
     </div>
-    <style>
-      .modal {
-        position: fixed;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        backdrop-filter: blur(10px);
-        z-index: 20;
-        display: none;
-        align-items: center;
-        justify-content: center;
-    
-        &.show {
-          display: grid;
-        }
+  </div>
+
+  <div class="modal" id="modal-1">
+    <div class="modal-body">
+      <h2>modal-2</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi doloribus quasi exercitationem unde ab, magnam iste animi dicta enim omnis quis consequatur porro ipsum veritatis molestias fugiat maiores itaque earum deleniti iure ipsam similique dignissimos? Consequuntur delectus voluptate, laudantium quis
+      odio quibusdam temporibus qui eveniet, laboriosam accusantium, modi natus. Dignissimos fuga placeat nisi esse dolor dolorem incidunt accusantium fugit, tenetur adipisci, expedita amet voluptatibus animi. Assumenda possimus officiis sit pariatur quasi vel dolore minima eveniet nihil quia quas laborum aut vero
+      explicabo, quisquam quae odio magnam natus officia commodi quaerat aspernatur eum maiores. Soluta non voluptates corporis necessitatibus molestiae, illo quis tenetur, iure, asperiores excepturi fugiat consequuntur eaque veniam ab optio aspernatur quasi ipsa nostrum amet.
+      <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer" data-close-modal>close</button>
+    </div>
+  </div>
+  <div class="modal" id="modal-2">
+    <div class="modal-body">
+      <h2>modal-3</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi doloribus quasi exercitationem unde ab, magnam iste animi dicta enim omnis quis consequatur porro ipsum veritatis molestias fugiat maiores itaque earum deleniti iure ipsam similique dignissimos? Consequuntur delectus voluptate, laudantium quis
+      odio quibusdam temporibus qui eveniet, laboriosam accusantium, modi natus. Dignissimos fuga placeat nisi esse dolor dolorem incidunt accusantium fugit, tenetur adipisci, expedita amet voluptatibus animi. Assumenda possimus officiis sit pariatur quasi vel dolore minima eveniet nihil quia quas laborum aut vero
+      explicabo, quisquam quae odio magnam natus officia commodi quaerat aspernatur eum maiores. Soluta non voluptates corporis necessitatibus molestiae, illo quis tenetur, iure, asperiores excepturi fugiat consequuntur eaque veniam ab optio aspernatur quasi ipsa nostrum amet.
+      <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer" data-close-modal>close</button>
+    </div>
+  </div>
+  <div class="modal" id="modal-3">
+    <div class="modal-body">
+      <h2>modal-4</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio commodi doloribus quasi exercitationem unde ab, magnam iste animi dicta enim omnis quis consequatur porro ipsum veritatis molestias fugiat maiores itaque earum deleniti iure ipsam similique dignissimos? Consequuntur delectus voluptate, laudantium quis
+      odio quibusdam temporibus qui eveniet, laboriosam accusantium, modi natus. Dignissimos fuga placeat nisi esse dolor dolorem incidunt accusantium fugit, tenetur adipisci, expedita amet voluptatibus animi. Assumenda possimus officiis sit pariatur quasi vel dolore minima eveniet nihil quia quas laborum aut vero
+      explicabo, quisquam quae odio magnam natus officia commodi quaerat aspernatur eum maiores. Soluta non voluptates corporis necessitatibus molestiae, illo quis tenetur, iure, asperiores excepturi fugiat consequuntur eaque veniam ab optio aspernatur quasi ipsa nostrum amet.
+      <button type="button" id="close-window" class="px-8 py-3 ml-2 mb-1 max-w-30 h-10 bg-pink-400 hover:bg-pink-600 cursor-pointer" data-close-modal>close</button>
+    </div>
+  </div>
+
+  <style>
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      backdrop-filter: blur(10px);
+      z-index: 20;
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      &.show {
+        display: grid;
       }
-    </style>
+    }
+  </style>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </body>
 </html>

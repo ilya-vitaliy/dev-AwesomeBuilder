@@ -2,17 +2,7 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-sky: #00a6f4;
-  --color-yellow: #fef0ce;
-  --color-amber: #ebcb8f;
-  --color-indigo: #7c86ff;
-  --color-brand: #35540e;
-  --color-red: #ebd6fb;
-  --color-white: #eeeeee;
-  --color-red-500: #882426;
-  --color-zinc-500: #323030;
-  --color-yellow-600: #c29545;
-  /* gome page-colors */
+  /* home page-colors */
   --color-purple: #5221e6;
   --color-indigo-950: #181823;
   --color-nautral-300: #c4c4c4;

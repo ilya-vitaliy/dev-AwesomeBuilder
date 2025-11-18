@@ -66,7 +66,7 @@ const installTabs = () => {
       btn.classList.add('bg-purple');
       target.classList.remove('hidden');
 
-      loadImagesForTab(target);
+      // loadImagesForTab(target);
     });
   });
 

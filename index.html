@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link href="/src/style.css" rel="stylesheet" />
-
   <title>Robin Williams</title>
 </head>
-
-<body class="bg-zinc-500">
-  <div class="container text-white mx-auto px-3 max-w-7xl font-sen bg-black">
+<body class=" bg-black text-white font-sen">
+  <div class="mx-auto px-3 max-w-7xl min-h-screen flex flex-col">
     {{> header}}
     {{> banner}}
     {{> experience}}
@@ -20,10 +17,7 @@
     {{> skillset}}
     {{> partners}}
     {{> projects}}
-    {{> content-template title="Instagram" description="If you area a person who enjoys photography, then I highly
-    recommend that you check out my Instagram. I’m an avid traveller and I capture the best
-    moments that I would love to cherish with the world" link="More about me" alt="instagram" image="instagram.png"
-    bg-color="bg-pink-100" }}
+    {{> instagram}}
     {{> dribbble}}
     {{> about}}
     {{> tabs}}
@@ -33,5 +27,4 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>

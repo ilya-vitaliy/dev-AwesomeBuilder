@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -15,23 +15,13 @@
   --color-pink-100: #fbe4ff;
   --color-amber-100: #fff3e4;
 
-  --text-h1: 48px;
-  --text-h2: 42px;
-  --text-h3: 36px;
-  --text-h4: 28px;
-  --text-h5: 24px;
-  --text-h6: 20px;
   --text-3xl: 32px;
   --text-5xl: 55px;
   --text-9xl: 117px;
 
-  --margin-template: 100px;
-  --padding-template: 100px;
-
-  --font-primary: 'Montserrat', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
   --font-sen: 'Sen', sans-serif;
 
+  --container-2xl: 738px; 
   --container-3xl: 1076px;
   --сontainer-4xl: 1116px;
   --container-5xl: 1320px;
@@ -39,18 +29,6 @@
 }
 
 @layer components {
-  body {
-    font-family: var(--font-primary);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  h1 {
-    font-size: var(--text-h1);
-    color: var(--color-yellow);
-  }
-
   .banner-title {
     font-size: 32px;
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -8,23 +9,23 @@
   <link href="/src/style.css" rel="stylesheet" />
   <title>Robin Williams</title>
 </head>
-<body class=" bg-black text-white font-sen">
-  <div class="mx-auto px-3 max-w-7xl min-h-screen flex flex-col">
-    {{> header}}
-    {{> banner}}
-    {{> experience}}
-    {{> philosophy}}
-    {{> skillset}}
-    {{> partners}}
-    {{> projects}}
-    {{> instagram}}
-    {{> dribbble}}
-    {{> about}}
-    {{> tabs}}
-    {{> contacts}}
-    {{> footer}}
-  </div>
+
+<body class=" bg-black text-white min-h-screen flex flex-col font-sen overflow-x-hidden">
+  {{> header}}
+  {{> banner}}
+  {{> experience}}
+  {{> philosophy}}
+  {{> skillset}}
+  {{> partners}}
+  {{> projects}}
+  {{> instagram}}
+  {{> dribbble}}
+  {{> about}}
+  {{> tabs}}
+  {{> contacts}}
+  {{> footer}}
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

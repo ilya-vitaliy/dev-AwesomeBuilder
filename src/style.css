@@ -15,9 +15,9 @@
   --color-pink-100: #fbe4ff;
   --color-amber-100: #fff3e4;
 
-  --color-twitter: #26A7DE;
-  --color-dribble: #E94B88;
-  --color-linkedin:#0077B5;
+  --color-twitter: #26a7de;
+  --color-dribble: #e94b88;
+  --color-linkedin: #0077b5;
 
   --text-3xl: 32px;
   --text-5xl: 55px;
@@ -25,11 +25,12 @@
 
   --font-sen: 'Sen', sans-serif;
 
-  --container-2xl: 738px; 
-  --container-3xl: 1076px;
-  --сontainer-4xl: 1116px;
+  --container-2xl: 738px;
+  --container-3xl: 1156px;
+  --сontainer-4xl: 1136px;
   --container-5xl: 1320px;
-  --container-7xl: 1464px;
+  /* --container-7xl: 1464px; */
+  --container-7xl: 1440px;
 }
 
 @layer components {

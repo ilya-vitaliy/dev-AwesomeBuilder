@@ -1,4 +1,5 @@
-// === [UTILS] Генерация URL-ов изображений по ключевому слову ===
+import '../css/style.css';
+
 const makeImageUrls = (keyword = 'travel') => {
   const safeKeyword = encodeURIComponent(keyword.trim());
   const randomSeed = Math.floor(Math.random() * 10000);

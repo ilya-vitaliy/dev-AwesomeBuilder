@@ -43,24 +43,17 @@
     @media (min-width: 1025px) {
       font-size: 78px;
     }
-
-    .swiper-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      @media (min-widyh: 1025px) {
-        display: flex;
-      }
-    }
   }
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    color: var(--cilor-white);
+  .swiper-wrapper {
+    --swiper-wrapper-transition-timing-function: linear;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper .swiper-wrapper {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 }
 

@@ -1,127 +1,94 @@
 import '../css/style.css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-const makeImageUrls = (keyword = 'travel') => {
-  const safeKeyword = encodeURIComponent(keyword.trim());
-  const randomSeed = Math.floor(Math.random() * 10000);
-  const timestamp = Date.now();
-
-  return [`https://picsum.photos/seed/${safeKeyword}-${randomSeed}/640/360`, `https://source.unsplash.com/640x360/?${safeKeyword}&sig=${timestamp}`];
-};
-
-// === [IMAGES] Загрузка изображений с fallback и preloader ===
-const loadImagesForTab = (tab) => {
-  if (!tab) return;
-
-  const images = tab.querySelectorAll('img');
-
-  images.forEach((img) => {
-    if (img.hasAttribute('data-loaded')) return;
-
-    const keyword = img.alt || 'travel';
-    const urls = makeImageUrls(keyword);
-
-    const tryLoad = (index = 0) => {
-      if (index >= urls.length) {
-        img.src = 'assets/img/cat-scottish.webp';
-        img.setAttribute('data-loaded', 'true');
-        return;
-      }
-
-      const imgPre = new Image();
-
-      imgPre.onload = () => {
-        img.src = urls[index];
-        img.setAttribute('data-loaded', 'true');
-        img.loading = 'lazy';
-      };
-
-      imgPre.onerror = () => tryLoad(index + 1);
-
-      imgPre.src = urls[index];
-    };
-
-    tryLoad();
-  });
-};
-
-// === [TABS] Инициализация табов и загрузка изображений ===
-const installTabs = () => {
-  const tabButtons = document.querySelectorAll('[data-tab-content]');
-  const tabContents = document.querySelectorAll('.tab-content');
-  if (!tabButtons.length || !tabContents.length) return;
-
-  const clearActiveState = () => {
-    tabButtons.forEach((btn) => btn.classList.remove('bg-purple'));
-    tabContents.forEach((tab) => tab.classList.add('hidden'));
-  };
-
-  tabButtons.forEach((btn) => {
-    const targetId = btn.getAttribute('data-tab-content');
-
-    btn.addEventListener('click', () => {
-      const target = document.getElementById(targetId);
-      if (!target) return;
-
-      clearActiveState();
-
-      btn.classList.add('bg-purple');
-      target.classList.remove('hidden');
-
-      // loadImagesForTab(target);
-    });
-  });
-
-  // Автостарт первого таба
-  tabButtons[0].click();
-};
-
-// === [BURGER MENU] Мобильное меню ===
-const initBurgerMenu = () => {
+window.addEventListener('load', () => {
   const burgerBtn = document.querySelector('#burger');
   const mobileContainer = document.querySelector('#mobile-container');
-  const body = document.body;
+  const body = document.querySelector('body');
 
-  if (!burgerBtn || !mobileContainer) return;
+  if (burgerBtn && mobileContainer) {
+    burgerBtn.addEventListener('click', () => {
+      mobileContainer.classList.toggle('hidden');
+      burgerBtn.classList.toggle('after:bg-purple');
+      burgerBtn.classList.toggle('before:bg-purple');
+      body.classList.toggle('overflow-hidden');
+    });
+  }
 
-  burgerBtn.addEventListener('click', () => {
-    mobileContainer.classList.toggle('hidden');
-    burgerBtn.classList.toggle('after:bg-purple');
-    burgerBtn.classList.toggle('before:bg-purple');
-    body.classList.toggle('overflow-hidden');
-  });
-};
+  const installTabs = () => {
+    const tabsButtons = document.querySelectorAll('[data-tab-content]');
+    const tabContent = document.querySelectorAll('.tab-content');
 
-// === [SWIPER] Инициализация с адаптивом ===
-let swiperInstance;
-const initSwiper = (mediaQuery) => {
-  if (swiperInstance) swiperInstance.destroy(true, true);
+    const removeActiveClassForNav = () => {
+      tabsButtons.forEach((item) => item.classList.remove('bg-purple'));
+    };
+    const hiddenContentTabs = () => {
+      tabContent.forEach((item) => item.classList.add('hidden'));
+    };
+    tabsButtons.forEach((item) => {
+      const tabsButton = item.getAttribute('data-tab-content');
 
-  swiperInstance = new Swiper(
-    '.swiper',
-    mediaQuery.matches
-      ? {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          grid: { rows: 3, fill: 'row' },
-          spaceBetween: 20,
-          loop: false,
-        }
-      : {
-          slidesPerView: 4,
-          slidesPerGroup: 1,
-          loop: true,
-          loopFillGroupWithBlank: true,
+      item.addEventListener('click', () => {
+        const showContent = document.getElementById(tabsButton);
+
+        removeActiveClassForNav();
+        item.classList.add('bg-purple');
+
+        hiddenContentTabs();
+        showContent.classList.remove('hidden');
+      });
+    });
+    tabsButtons[0].click();
+  };
+
+  function initPartners() {
+    const breakpoint = window.matchMedia('(max-width:991px)');
+    console.log(breakpoint);
+
+    let partnersSwiper;
+
+    const breakpointChecker = function () {
+      if (breakpoint.matches === true) {
+        if (partnersSwiper !== undefined) partnersSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    const enableSwiper = function () {
+      partnersSwiper = new Swiper('.swiper', {
+        slidesPerView: 4,
+        speed: 3000,
+        loop: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
         },
-  );
-};
+      });
+      const swiperMobileTabletConfig = {
+        slidesPerView: 2,
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
+        spaceBetween: 20,
+        allowTouchMove: false,
+        loop: false,
+        autoplay: false,
+      };
+    };
 
-// === [INIT] Запуск при загрузке DOM ===
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.querySelector('.tabs')) installTabs();
+    if (breakpoint.addEventListener) {
+      breakpoint.addEventListener('change', breakpointChecker);
+    } else if (breakpoint.addListener) {
+      breakpoint.addListener(breakpointChecker);
+    }
 
-  initBurgerMenu();
+    breakpointChecker();
+  }
 
-  const mediaQuery768 = window.matchMedia('(max-width: 768px)');
-  initSwiper(mediaQuery768);
-  mediaQuery768.addEventListener('change', () => initSwiper(mediaQuery768));
+  initPartners();
+  document.querySelectorAll('.tabs').length ? installTabs() : null;
 });

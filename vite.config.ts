@@ -6,7 +6,7 @@ import handlebars from 'vite-plugin-handlebars';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-  base: '/dev-portfolio-RobinW/',
+  base: '/dev-portfolio-RobinW./',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),

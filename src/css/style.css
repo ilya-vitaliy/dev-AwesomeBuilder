@@ -1,5 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/Sen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/Sen-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/Sen-SemiBold') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/Sen-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/Sen-ExtraBold.ttf') format('truetype');
+}
 
 @theme {
   /* home page-colors */
@@ -27,7 +66,7 @@
 
   --container-2xl: 738px;
   --container-3xl: 1220px;
-  --сontainer-4xl: 1136px;
+  --container-4xl: 1136px;
   --container-5xl: 1320px;
   --container-7xl: 1440px;
 }

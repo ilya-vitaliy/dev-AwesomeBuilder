@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robin Williams</title>
-  <script type="module" crossorigin src="./assets/js/main.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/css/style.css">
+  <script type="module" crossorigin src="/dev-portfolio-RobinW/assets/js/main.js"></script>
+  <link rel="stylesheet" crossorigin href="/dev-portfolio-RobinW/assets/css/style.css">
 </head>
 
 <body class=" bg-black text-white min-h-screen flex flex-col font-sen overflow-x-hidden">
@@ -27,9 +27,12 @@
       class="relative w-6 h-6 cursor-pointer ml-auto before:absolute before:w-4.5 before:bg-nautral-300 before:h-0.75 before:top-1.5 before:left-1 after:absolute after:w-3 after:bg-nautral-300 after:h-0.75 after:top-4.5 after:right-0.5 hover:after:bg-purple hover:before:bg-purple md:hidden"></button>
   </header>  <section class="relative flex flex-col max-w-7xl mx-auto md:flex-row justify-end w-full md:pt-41.5 pb-12 md:pb-21 lg:before:absolute lg:before:w-4xl lg:before:h-full before:-top-1.5 lg:before:bg-indigo-950">
     <picture class="mx-auto md:mx-0 md:absolute left-0 top-41.5 mb-12 md:mb-0">
-      <source media="(min-width:  1024px )" srcset="assets/img/banner-xl.webp">
-      <source media="(min-width:  768px )" srcset="assets/img/banner-md.webp">
-      <img src="assets/img/banner-xs.webp">
+      <source type="image/webp" media="(min-width:1024px )" srcset="assets/img/banner-xl.webp">
+      <source type="image/png" media="(min-width:1024px )" srcset="assets/img/banner-xl.png">
+      <source type="image/webp" media="(min-width:768px )" srcset="assets/img/banner-md.webp">
+      <source type="image/png" media="(min-width:768px )" srcset="assets/img/banner-md.png">
+      <source type="image/webp" srcset="assets/img/banner-xs.webp">
+      <img src="assets/img/banner-xs.png" loading="eager" alt="Robin Williams. A Product Designer">
     </picture>
     <div class="md:w-102 lg:w-2xl  mr-0 md:mr-9 lg:mr-10 md:py-35 px-5 md:px-0 z-10">
       <h1 class="text-white font-bold banner-title mb-4 md:mb-8 leading-[1.2]">
@@ -45,7 +48,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
       <div>
         <div class="text-9xl text-gray-500 leading-[1.2]">01</div>
-        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5   lg:w-full md:w-49   leading-[1.5] font-bold text-white">
+        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5   lg:w-full md:w-49 leading-[1.5] font-bold text-white">
           <span class="text-green-400">Google</span>, Interaction Designer
         </h5>
         <p class="text-gray-500 leading-[1.5] max-w-92">I currently am the lead designer on the interaction design team
@@ -53,7 +56,7 @@
       </div>
       <div>
         <div class="text-9xl text-gray-500 leading-[1.2]">02</div>
-        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5 lg:w-full md:w-49   leading-[1.5] font-bold text-white">
+        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5 lg:w-full md:w-49 leading-[1.5] font-bold text-white">
           <span class="text-blue-400">Facebook</span>, Product Designer
         </h5>
         <p class="text-gray-500 leading-[1.5] max-w-92">I’ve worked on a wide variety of internal tools for facebook
@@ -61,7 +64,7 @@
       </div>
       <div>
         <div class="text-9xl text-gray-500 leading-[1.2]">03</div>
-        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5 lg:w-full md:w-49   leading-[1.5] font-bold text-white">
+        <h5 class="text-2xl mb-4 md:mb-6 lg:mb-5.5 lg:w-full md:w-49 leading-[1.5] font-bold text-white">
           <span class="text-pink-400">Dribbble</span>, Graphic Designer
         </h5>
         <p class="text-gray-500 leading-[1.5] max-w-92">I started my design career with Dribbble. I was incharge of
@@ -78,7 +81,7 @@
         me</a>
     </div>
     <div class="w-full aspect-square md:aspect-auto">
-      <img src="assets/img/philosophy.webp" class="w-full h-full object-cover" alt="philosophy" />
+      <img src="assets/img/philosophy.webp" class="w-full h-full object-cover" loading="lazy" alt="philosophy" />
     </div>
   </section>  <section class="max-w-7xl mx-auto w-full px-5 md:px-10 lg:px-18 py-16 md:py-20 lg:py-30 grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-3">
     <div class="mb-12 lg:mb-0 lg:pr-15">
@@ -238,14 +241,14 @@
   				<h2 class="text-white text-3xl md:text-5xl font-bold max-w-172.25">Work that I’ve done for the past 8 years</h2>
   			</div>
   			<div class="bg-indigo-950 pb-10">
-  				<img src="assets/img/project-1.webp" class="mb-10 w-full" alt="project">
+  				<img src="assets/img/project-1.webp" loading="lazy" class="mb-10 w-full" alt="project">
   				<h3 class="mb-3.25 px-8 text-2xl font-bold">Restaurant Website Design</h3>
   				<h6 class="px-8 text-lg text-gray-500 leading-[1.5]">I worked with the guys at CBRE to redesign their
   					entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a
   					very challenging one.</h6>
   			</div>
   			<div class="bg-indigo-950 pb-10">
-  				<img src="assets/img/project-2.webp" class="mb-10 w-full" alt="project">
+  				<img src="assets/img/project-2.webp" loading="lazy" class="mb-10 w-full" alt="project">
   				<h3 class="mb-3 px-8 text-2xl font-bold">Restaurant Website Design</h3>
   				<h6 class="px-8 text-lg text-gray-500 leading-[1.5]">I worked with the guys at CBRE to redesign their
   					entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a
@@ -254,14 +257,14 @@
   		</div>
   		<div class="grid gap-12 lg:gap-6">
   			<div class="bg-indigo-950 pb-10">
-  				<img src="assets/img/project-3.webp" class="mb-10 w-full" alt="project">
+  				<img src="assets/img/project-3.webp" loading="lazy" class="mb-10 w-full" alt="project">
   				<h3 class="mb-3 px-8 text-2xl font-bold">Restaurant Website Design</h3>
   				<h6 class="px-8 text-lg text-gray-500 leading-[1.5]">I worked with the guys at CBRE to redesign their
   					entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a
   					very challenging one.</h6>
   			</div>
   			<div class="bg-indigo-950 pb-10">
-  				<img src="assets/img/project-4.webp" class="mb-10 w-full" alt="project">
+  				<img src="assets/img/project-4.webp" loading="lazy" class="mb-10 w-full" alt="project">
   				<h3 class="mb-3 px-8 text-2xl font-bold">Restaurant Website Design</h3>
   				<h6 class="px-8 text-lg text-gray-500 leading-[1.5]">I worked with the guys at CBRE to redesign their
   					entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a
@@ -280,7 +283,7 @@
         me</a>
     </div>
     <div class="w-full aspect-square md:aspect-auto">
-      <img src="assets/img/instagram.webp" class="w-full h-full object-cover" alt="philosophy" />
+      <img src="assets/img/instagram.webp" loading="lazy" class="w-full h-full object-cover" alt="philosophy" />
     </div>
   </section>  <section class="py-16 md:py-20 lg:py-30 max-w-3xl lg:mx-auto px-5 md:px-10 lg:px-18">
     <div class="mb-16 md:mb-30">
@@ -364,28 +367,28 @@
       </nav>
       <div class="gallery ">
         <div id="content-1" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
-          <img src="assets/img/italia-1.webp" alt="ITALY" class="w-full h-105 object-cover">
-          <img src="assets/img/italia-2.webp" alt="ITALY" class="w-full h-105 object-cover">
-          <img src="assets/img/italia-3.webp" alt="ITALY" class="w-full h-105 object-cover">
-          <img src="assets/img/italia-4.webp" alt="ITALY" class="w-full h-105 object-cover">
+          <img src="assets/img/italia-1.webp" loading="lazy" alt="ITALY" class="w-full h-105 object-cover">
+          <img src="assets/img/italia-2.webp" loading="lazy" alt="ITALY" class="w-full h-105 object-cover">
+          <img src="assets/img/italia-3.webp" loading="lazy" alt="ITALY" class="w-full h-105 object-cover">
+          <img src="assets/img/italia-4.webp" loading="lazy" alt="ITALY" class="w-full h-105 object-cover">
         </div>
         <div id="content-2" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
-          <img src="assets/img/australia-1.webp" alt="AUSTRALIA" class="w-full h-105 object-cover">
-          <img src="assets/img/australia-2.webp" alt="AUSTRALIA" class="w-full h-105 object-cover">
-          <img src="assets/img/australia-3.webp" alt="AUSTRALIA" class="w-full h-105 object-cover">
-          <img src="assets/img/australia-4.webp" alt="AUSTRALIA" class="w-full h-105 object-cover">
+          <img src="assets/img/australia-1.webp" loading="lazy" alt="AUSTRALIA" class="w-full h-105 object-cover">
+          <img src="assets/img/australia-2.webp" loading="lazy" alt="AUSTRALIA" class="w-full h-105 object-cover">
+          <img src="assets/img/australia-3.webp" loading="lazy" alt="AUSTRALIA" class="w-full h-105 object-cover">
+          <img src="assets/img/australia-4.webp" loading="lazy" alt="AUSTRALIA" class="w-full h-105 object-cover">
         </div>
         <div id="content-3" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
-          <img src="assets/img/india-1.webp" alt="INDIA" class="w-full h-105 object-cover">
-          <img src="assets/img/india-2.webp" alt="INDIA" class="w-full h-105 object-cover">
-          <img src="assets/img/india-3.webp" alt="INDIA" class="w-full h-105 object-cover">
-          <img src="assets/img/india-4.webp" alt="INDIA" class="w-full h-105 object-cover">
+          <img src="assets/img/india-1.webp" loading="lazy" alt="INDIA" class="w-full h-105 object-cover">
+          <img src="assets/img/india-2.webp" loading="lazy" alt="INDIA" class="w-full h-105 object-cover">
+          <img src="assets/img/india-3.webp" loading="lazy" alt="INDIA" class="w-full h-105 object-cover">
+          <img src="assets/img/india-4.webp" loading="lazy" alt="INDIA" class="w-full h-105 object-cover">
         </div>
         <div id="content-4" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 hidden">
-          <img src="assets/img/brazil-1.webp" alt="BRAZIL" class="w-full h-105 object-cover">
-          <img src="assets/img/brazil-2.webp" alt="BRAZIL" class="w-full h-105 object-cover">
-          <img src="assets/img/brazil-3.webp" alt="BRAZIL" class="w-full h-105 object-cover">
-          <img src="assets/img/brazil-4.webp" alt="BRAZIL" class="w-full h-105 object-cover">
+          <img src="assets/img/brazil-1.webp" loading="lazy" alt="BRAZIL" class="w-full h-105 object-cover">
+          <img src="assets/img/brazil-2.webp" loading="lazy" alt="BRAZIL" class="w-full h-105 object-cover">
+          <img src="assets/img/brazil-3.webp" loading="lazy" alt="BRAZIL" class="w-full h-105 object-cover">
+          <img src="assets/img/brazil-4.webp" loading="lazy" alt="BRAZIL" class="w-full h-105 object-cover">
         </div>
       </div>
     </div>

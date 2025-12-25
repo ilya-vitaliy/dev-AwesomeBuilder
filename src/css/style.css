@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/assets/fonts/Sen-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Sen-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -66,8 +66,8 @@
 
   --container-2xl: 738px;
   --container-3xl: 1220px;
-  --container-4xl: 1136px;
-  --container-5xl: 1320px;
+  --container-5xl: 1136px;
+  --container-6xl: 1320px;
   --container-7xl: 1440px;
 }
 

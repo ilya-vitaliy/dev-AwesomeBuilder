@@ -2,25 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robin Williams</title>
 </head>
 
 <body class=" bg-black text-white min-h-screen flex flex-col font-sen overflow-x-hidden">
   {{> header}}
-  {{> banner}}
-  {{> experience}}
-  {{> philosophy}}
-  {{> skillset}}
-  {{> partners}}
-  {{> projects}}
-  {{> instagram}}
-  {{> dribbble}}
-  {{> about}}
-  {{> tabs}}
-  {{> contacts}}
+  <main>
+    {{> banner}}
+    {{> experience}}
+    {{> philosophy}}
+    {{> skillset}}
+    {{> partners}}
+    {{> projects}}
+    {{> instagram}}
+    {{> dribbble}}
+    {{> about}}
+    {{> tabs}}
+    {{> contacts}}
+  </main>
   {{> footer}}
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script type="module" src="/src/js/main.js"></script>
